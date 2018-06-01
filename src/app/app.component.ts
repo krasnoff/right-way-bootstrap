@@ -12,5 +12,8 @@ export class AppComponent {
 
   ngAfterViewChecked() {
     // here we call jquery functions
+    $('#exampleModal').on('hidden.bs.modal', function (e) {
+      debugger;
+    })
   }
 }
